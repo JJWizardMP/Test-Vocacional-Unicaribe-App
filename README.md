@@ -1,6 +1,6 @@
 ## Test Vocacional UniCaribe App
 
-### Tecnologias Usadas:
+### Tecnologías Usadas:
 
 #### Frontend
 
