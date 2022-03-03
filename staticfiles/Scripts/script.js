@@ -240,7 +240,7 @@ var quiz = {
     { text: "Me interesa poco"},
     { text: "Me interesa"},
     { text: "Me interesa mucho" }]},
-  
+
   {
     index : 26,
     text: "¿Te interesan los temas de importación y exportación en empresas?",
@@ -336,13 +336,13 @@ var app = new Vue({
       });
 
       axios
-        .post('http://127.0.0.1:8000/api/v1.0/quiz/', data, 
+        .post('https://django-sos-unicaribe-app.herokuapp.com/api/v1.0/quiz/', data,
           {headers:{
-            "X-CSRFToken": CSRF_TOKEN, 
+            "X-CSRFToken": CSRF_TOKEN,
             "Content-Type" : "application/json"}})
         .catch(err =>{
           console.log(err);
-        });  
+        });
         window.location.href = '/quiz/dashboard/';
     },
 
